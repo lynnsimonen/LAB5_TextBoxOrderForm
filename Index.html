@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>jQuery Product Order Form</title>
-    <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"></script>
-    <script src="orderformCode.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="orderformStyle.css">
 </head>
 <body>
-<table>
-        <tr>
+    <table>
+        <tr id="headings">
             <td>
                Qty
             </td>
@@ -27,49 +23,54 @@
                 Total
             </td>
         </tr>
-    <tr>
-        <td>
-            <input type="number" id="learningQty" class="form-control" min="0" max="10" step="1" data-price="39.99">
-        </td>
-        <td>
-            <label for="learningQty" class="product">Learning jQuery</label>
-        </td>
-        <td>
-            $39.99
-        </td>
-        <td>
-            <p id="learningTotal"></p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <input type="number" id="donationQty" class="form-control" min="0" max="10" step="1" data-price="14.99">
-        </td>
-        <td>
-            <label for="donationQty" class="product">jQuery Donation</label>
-        </td>
-        <td>
-            $14.99
-        </td>
-        <td>
-            <p id="donationTotal"></p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <br>
-        </td>
-        <td>
-            <br>
-        </td>
-        <td>
-            <p id="Total"></p>
-        </td>
-        <td>
-            <!--Grand Total = learningTotal + donationTotal-->TOTAL
-        </td>
-    </tr>
-</table>
+        <tr>
+            <td>
+                <input type="number" id="learningQty" step="1" >
+            </td>
+            <td>
+                <label for="learningQty" class="product">Learning jQuery</label>
+            </td>
+            <td>
+                <b>$39.99</b>
+            </td>
+            <td>
+                <p id="learningTotal"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" id="donationQty"  step="1">
+            </td>
+            <td>
+                <label for="donationQty" class="product">jQuery Donation</label>
+            </td>
+            <td>
+                <b>$14.99</b>
+            </td>
+            <td>
+                <p id="donationTotal"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td>
+                Grand Total:
+            </td>
+            <td>
+                <p id="total"></p>
+            </td>
+        </tr>
+    </table>
 
 </body>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="orderformCode.js"></script>
 </html>

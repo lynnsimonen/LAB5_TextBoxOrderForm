@@ -1,0 +1,22 @@
+body {
+    background-color: lavender;
+    padding: 100px;
+    font-weight: bold;
+}
+#headings {
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+td {
+    padding-left:15px;
+}
+label {
+    color: purple;
+    text-decoration: underline;
+}
+p {
+    padding-top: 15px;
+}
+input {
+    width: 50px;
+}
